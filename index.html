@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amanda Souza | Portfólio</title>
+  <meta name="description" content="Portfólio de Amanda Souza, estudante de Análise e Desenvolvimento de Sistemas com foco em dados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">🎀 Amanda Souza</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    <nav id="menu" class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#paixoes">Paixões</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button id="temaBtn" class="tema-btn" aria-label="Alternar tema claro e escuro">Tema</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-faixa">
+      <div class="hero">
+        <div>
+          <h1>Oi, eu sou a <span>Amanda</span> 💀</h1>
+          <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonada por dados, games, música e cachorros.</p>
+          <a class="botao" href="#sobre">Conheça minha história</a>
+        </div>
+        <div class="hero-arte" aria-hidden="true">
+          <svg class="mascote" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 120 L22 30 L78 62 Q100 54 122 62 L178 30 L170 120 Q168 176 100 180 Q32 176 30 120Z" fill="#1c0f2e" stroke="#ff5fa2" stroke-width="4"/>
+            <ellipse cx="100" cy="118" rx="52" ry="46" fill="#fff"/>
+            <ellipse cx="80" cy="112" rx="9" ry="11" fill="#1c0f2e"/>
+            <ellipse cx="120" cy="112" rx="9" ry="11" fill="#1c0f2e"/>
+            <path d="M92 134 Q100 142 108 134" stroke="#1c0f2e" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M100 66 c-8-12-24 0-12 12 l12 10 12-10 c12-12-4-24-12-12z" fill="#ff5fa2"/>
+            <circle cx="62" cy="132" r="7" fill="#ffb3d1"/><circle cx="138" cy="132" r="7" fill="#ffb3d1"/>
+          </svg>
+          <div class="grafico" id="grafico"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="faixa" aria-hidden="true">💀 🎀 ⭐ 🐶 🐾 💜 🎮 ⭐ 🎀 💀 🐾 🐶 ⭐ 🎀</div>
+
+    <section id="sobre" class="secao sobre">
+      <img src="images/foto-amanda.jpeg" alt="Foto de Amanda Souza" width="220" height="220">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Tenho 23 anos e curso Análise e Desenvolvimento de Sistemas. Dentro da tecnologia, é a área de dados que mais me encanta, e é nela que quero me especializar.</p>
+        <p id="curiosidade" class="curiosidade">Clique no botão para descobrir uma curiosidade sobre mim.</p>
+        <button id="curiosidadeBtn" class="botao">Quero saber mais</button>
+      </div>
+    </section>
+
+    <section id="trajetoria" class="secao">
+      <h2>Trajetória</h2>
+      <ol class="linha">
+        <li><strong>Aos 21 anos</strong> fui aprovada no meu primeiro concurso público e me tornei servidora do Conselho Federal dos Representantes Comerciais.</li>
+        <li><strong>Na faculdade</strong> estudo Análise e Desenvolvimento de Sistemas e construo minha base em programação.</li>
+        <li><strong>Meu foco</strong> é a área de dados: transformar informação em decisões melhores.</li>
+      </ol>
+    </section>
+
+    <section id="paixoes" class="secao">
+      <h2>Minhas paixões</h2>
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar paixões">
+        <button class="ativo" data-filtro="todas">Todas</button>
+        <button data-filtro="animais">🐶 Animais</button>
+        <button data-filtro="games">🎮 Games</button>
+        <button data-filtro="musica">🎶 Música</button>
+        <button data-filtro="cozinha">🍰 Cozinha</button>
+        <button data-filtro="livros">📖 Livros</button>
+        <button data-filtro="anime">📚 Anime</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-cat="animais">
+          <div class="galeria" data-fotos="images/bilbo-1.jpg, images/bilbo-2.jpg, images/bilbo-3.jpg, images/bilbo-4.jpg, images/bilbo-5.jpg, images/ong-animais-1.jpg, images/ong-animais-2.jpg"><img src="images/bilbo-1.jpg" alt="Foto de Bilbo, cachorro de Amanda"></div>
+          <h3>Cachorros e o Bilbo 🐶</h3>
+          <p>Cachorros são a maior paixão da minha vida. O Bilbo é o meu amor todo, e eu amo todos os bichinhos.</p>
+        </article>
+
+        <article class="card" data-cat="games">
+          <div class="galeria" data-fotos="images/jogos-1.jpg, images/jogos-2.jpg, images/jogos-3.jpg, images/jogos-4.jpg, images/jogos-5.jpg, images/jogos-6.jpeg"><img src="images/jogos-1.jpg" alt="Foto de Amanda jogando"></div>
+          <h3>Jogos no geral 🎮</h3>
+          <p>Video game, PC e jogos de tabuleiro: se tem diversão, eu estou dentro.</p>
+        </article>
+        <article class="card" data-cat="games">
+          <div class="galeria" data-fotos="images/stardew-valley.jpeg"><img src="images/stardew-valley.jpeg" alt="Imagem de Stardew Valley"></div>
+          <h3>Stardew Valley 🌱</h3>
+          <p>Meu vício do momento! Plantar, cuidar da fazenda e fazer amizades no vilarejo é o meu cantinho de paz.</p>
+        </article>
+        <article class="card" data-cat="games">
+          <div class="galeria" data-fotos="images/the-witcher-3.jpeg"><img src="images/the-witcher-3.jpeg" alt="Imagem de The Witcher 3"></div>
+          <h3>The Witcher 3 ⚔️</h3>
+          <p>Adoro jogos de modo história, e The Witcher 3 é um dos meus preferidos.</p>
+        </article>
+        <article class="card" data-cat="musica">
+          <div class="galeria" data-fotos="images/the-neighbourhood.jpeg, images/justin-bieber-1.jpeg"><img src="images/the-neighbourhood.jpeg" alt="Foto de show ou da banda The Neighbourhood"></div>
+          <h3>The Neighbourhood 🎶</h3>
+          <p>Minha banda favorita! Ano que vem vou ao Lollapalooza para vê-los ao vivo, e já estou ansiosa.</p>
+        </article>
+        <article class="card" data-cat="musica">
+          <div class="galeria" data-fotos="images/justin-bieber-2.jpeg"><img src="images/justin-bieber-2.jpeg" alt="Foto de Amanda com música"></div>
+          <h3>Justin Bieber 🎤</h3>
+          <p>Meu cantor favorito, com músicas que fazem parte da minha trilha sonora.</p>
+        </article>
+        <article class="card" data-cat="livros">
+          <div class="galeria" data-fotos="images/livros-1.jpeg, images/livros-2.jpeg"><img src="images/livros-1.jpeg" alt="Foto de livros favoritos de Amanda"></div>
+          <h3>Livros 📖</h3>
+          <p>Leio de tudo um pouco: ficção, história, política, economia, filosofia e o que mais me despertar curiosidade.</p>
+        </article>
+        <article class="card" data-cat="cozinha">
+          <div class="galeria" data-fotos="images/bolo-1.jpg, images/bolo-2.jpg, images/bolo-3.jpg, images/bolo-4.jpg"><img src="images/bolo-1.jpg" alt="Foto de bolo ou doce feito por Amanda"></div>
+          <h3>Bolos e doces 🍰</h3>
+          <p>Cozinhar é um dos meus prazeres, principalmente bolos e doces. Fazer uma receita nova é sempre uma aventura.</p>
+        </article>
+        <article class="card" data-cat="anime">
+          <div class="galeria" data-fotos="images/animes-mangas-1.jpg, images/animes-mangas-2.jpeg, images/animes-mangas-3.jpeg, images/animes-mangas-4.jpeg, images/animes-mangas-5.jpeg"><img src="images/animes-mangas-1.jpg" alt="Imagem de anime"></div>
+          <h3>Animes e mangás 📚</h3>
+          <p>Assisto anime e leio mangá. Meu favorito é Hunter x Hunter.</p>
+        </article>
+        <article class="card" data-cat="anime">
+          <div class="galeria" data-fotos="images/kuromi-1.jpg, images/kuromi-2.jpeg"><img src="images/kuromi-1.jpg" alt="Imagem da Kuromi"></div>
+          <h3>Kuromi 🖤</h3>
+          <p>A Kuromi, da Sanrio, é a inspiração do visual deste site.</p>
+        </article>
+      </div>
+
+    </section>
+
+    <div class="faixa" aria-hidden="true">🐾 ⭐ 🎀 💀 🎀 ⭐ 🐾 💜 🐶 💜 🐾 ⭐ 🎀 💀</div>
+
+    <section id="projetos" class="secao">
+      <h2>Projetos</h2>
+      <p>Meus projetos ficam no GitHub. Em breve, os destaques aparecem aqui.</p>
+      <a class="botao" href="https://github.com/SouzaAmandaa" target="_blank" rel="noopener">Ver meu GitHub</a>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Me encontre nas redes profissionais.</p>
+      <p class="links">
+        <a class="botao" href="https://www.linkedin.com/in/amanda-souza-ti-dados/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="botao" href="https://github.com/SouzaAmandaa" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Amanda Souza 🎀</p>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Foto ampliada">
+    <img id="lbImg" alt="">
+    <button id="lbFechar" aria-label="Fechar">✕</button>
+    <button id="lbAnt" class="seta esq" aria-label="Foto anterior">‹</button>
+    <button id="lbProx" class="seta dir" aria-label="Próxima foto">›</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
